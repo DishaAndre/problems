@@ -1,20 +1,24 @@
 body {
     font-family: Arial;
     padding: 20px;
-    background: #f4f4f4;
+    text-align: center;
+
+    /* Gradient background */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
 }
 
-/* Layout */
+/* Grid Layout */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    margin-top: 20px;
 }
 
 /* Card */
 .card {
-    width: 200px;
-    height: 200px;
+    position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -22,12 +26,37 @@ body {
 /* Image */
 .card img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
+
     transition: 0.4s;
 }
 
-/* Hover Zoom */
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    opacity: 0;
+    transition: 0.4s;
+}
+
+/* Hover Effects */
 .card:hover img {
     transform: scale(1.2);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* Slight lift effect */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
