@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+/* Layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Card */
+.card {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Hover Zoom */
+.card:hover img {
+    transform: scale(1.2);
+}
