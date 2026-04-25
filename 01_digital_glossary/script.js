@@ -1,14 +1,18 @@
-document.getElementById("search").oninput = function(){
+document.getElementById("search").oninput = function () {
+
     let val = this.value.toLowerCase();
+
     let rows = document.querySelectorAll("table tr");
 
-    rows.forEach(function(row, index){
-        if(index === 0) return;
+    rows.forEach(function(row, index) {
 
-        if(row.innerText.toLowerCase().includes(val)){
+        if (index === 0) return; // skip header
+
+        if (row.innerText.toLowerCase().includes(val)) {
             row.style.display = "";
-        } else{
+        } else {
             row.style.display = "none";
         }
+
     });
 };
