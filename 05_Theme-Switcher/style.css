@@ -1,0 +1,10 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: black;
+    color: white;
+}
