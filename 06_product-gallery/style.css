@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: white;
+}
+
+/* Product layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Product card */
+.card {
+    background: white;
+    color: black;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #43cea2;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cart */
+#cart {
+    list-style: none;
+    padding: 0;
+}
