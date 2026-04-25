@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background: lightgray;
+    width: 20%;
+    float: left;
+    height: 400px;
+    padding: 10px;
+}
+
+section {
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+input, textarea, select {
+    margin: 5px;
+}              
