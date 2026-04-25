@@ -1,0 +1,33 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container */
+.faq {
+    max-width: 500px;
+}
+
+/* Each item */
+.item {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Question */
+.question {
+    padding: 15px;
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+}
+
+/* Answer */
+.answer {
+    display: none;
+    padding: 15px;
+    background: #eee;
+}
