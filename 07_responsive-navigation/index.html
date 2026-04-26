@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h3 class="logo">MySite</h3>
+
+    <div id="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+
+        <!-- DROPDOWN -->
+        <div class="dropdown">
+            <button onclick="toggleMenu()">Services ▼</button>
+            <div id="menu">
+                <a href="#">Web</a>
+                <a href="#">App</a>
+                <a href="#">AI</a>
+            </div>
+        </div>
+
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- MOBILE BUTTON -->
+    <button class="menu-btn" onclick="toggleNav()">☰</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
