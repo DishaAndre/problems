@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 12px 20px;
+    color: white;
+}
+
+/* LOGO */
+.logo {
+    margin: 0;
+}
+
+/* LINKS */
+#links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* LINKS STYLE */
+a, button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+/* HIDDEN MENU */
+#menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 120px;
+}
+
+/* MENU ITEMS */
+#menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+#menu a:hover {
+    background: #eee;
+}
+
+/* MOBILE BUTTON */
+.menu-btn {
+    display: none;
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    #links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background: #6a11cb;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
