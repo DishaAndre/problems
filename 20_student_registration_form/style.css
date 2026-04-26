@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+h2 {
+    margin-top: 30px;
+}
+
+/* Form box effect */
+form {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Table spacing */
+table {
+    text-align: left;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 200px;
+    padding: 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+    padding: 7px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
