@@ -1,0 +1,58 @@
+/* Full page */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Table full width */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cells */
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Header row */
+th {
+    background: #2a5298;
+    color: white;
+}
+
+/* Hover effect */
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Special cells */
+.break {
+    background: #ffcc80;
+    font-weight: bold;
+}
+
+.lab {
+    background: #a5d6a7;
+    font-weight: bold;
+}
+
+.seminar {
+    background: #ce93d8;
+    font-weight: bold;
+}
